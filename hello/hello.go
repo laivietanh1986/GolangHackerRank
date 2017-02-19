@@ -1,4 +1,4 @@
-package hello
+package Hello
 
 import "fmt"
 import "net/http"

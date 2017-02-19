@@ -1,0 +1,16 @@
+<!--Form.html-->
+{{if .Success}}
+    <h1>Thank you for share your detail</h1>
+{{else}}
+    <h1>Contact Form</h1>
+    <Form method="POST">
+        <label for="Email">Input your Email:</label><br/>
+        <Input type="email" name="Email"></Input><br/>
+        <label for="Subject">Input your Email Subject:</label><br/>
+        <Input type="text" name="Subject"></Input><br/>
+        <label for="Message">Input your Email Message:</label><br/>
+        <Input type="text" name="Message"></Input><br/>
+        <input type="submit">       
+
+    </Form>
+{{end}}
