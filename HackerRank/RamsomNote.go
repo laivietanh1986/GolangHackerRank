@@ -27,17 +27,18 @@ func main() {
         }
 		
 	}
-	result := "YES"
-	for i := 0; i < len(arrRansom); i++ {
-		_, ok := magMap[hash(arrRansom[i])]
-		if ok == false || (ok == true && magMap[hash(arrRansom[i])] < 1) {
-			result = "NO"
+	result := "Yes"
+	 for _,te := range arrRansom {
+        _, ok := magMap[hash(te)]
+         if ok == false || (ok == true && magMap[hash(te)] < 1) {
+			result = "No"
 			break
 		} else {
-			magMap[hash(arrRansom[i])] = magMap[hash(arrRansom[i])] - 1
+             magMap[hash(te)] = magMap[hash(te)] - 1
 
 		}
-	}
+    }
+	
 	fmt.Println(result)
 
 }
